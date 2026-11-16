@@ -106,6 +106,7 @@ class Patient(Person, Billable):
 
     def notify(self, message):
         """Observer callback: print a notification about an appointment."""
+        print(f"Notification for {self.name}: {message}")
 
     # ---------------------------------------------------------- billing inputs
     def is_senior_citizen(self):
