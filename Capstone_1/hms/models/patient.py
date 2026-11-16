@@ -301,6 +301,3 @@ class Patient(Person, Billable):
             f"Patient(person_id={self.person_id!r}, name={self.name!r}, "
             f"status={self.status.code!r})"
         )
-
-
-        print(f"Notification for {self.name}: {message}")
